@@ -1,14 +1,16 @@
-import { Card } from "./components/common/Card";
-import { Home } from "./components/pages/Home";
+import Counter from "./components/common/counter/Counter";
 import { Navbar } from "./components/layout/navbar/Navbar";
+// import { Footer } from "./components/layout/footer/Footer";
+import { IttemListContainer } from "./components/pages/itemListContainer/IttemListContainer";
 
 function App() {
     return (
-        <div>
+        <>
             <Navbar />
-            <Home />
-            <Card />
-        </div>
+            <IttemListContainer />
+            {/* <Footer /> */}
+            <Counter />
+        </>
     );
 }
 

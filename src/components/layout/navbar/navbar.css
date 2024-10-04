@@ -1,3 +1,6 @@
-.container-navbar{
+.container-navbar {
     background-color: steelblue;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
