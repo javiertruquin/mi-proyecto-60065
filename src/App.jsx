@@ -2,15 +2,14 @@
 // import { Navbar } from "./components/layout/navbar/Navbar";
 // import { Footer } from "./components/layout/footer/Footer";
 // import { IttemListContainer } from "./components/pages/itemListContainer/IttemListContainer";
-// import PruebaGrid from "./components/PruebaGrid";
-
+// import PruebaGrid from "./components/PruebaGrid.jsx";
 import PruebaComponentes from "./components/PruebaComponentes";
 
 function App() {
     return (
         <>
-            {/* <Navbar />
-            <IttemListContainer /> */}
+            {/* <Navbar />*/}
+            {/* <IttemListContainer /> */}
             {/* <Footer /> */}
             {/* <Counter /> */}
             {/* <PruebaGrid /> */}
