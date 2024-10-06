@@ -14,16 +14,15 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 export const CartWidget = () => {
-    const [carrito, setCarrito] = useState(0);
+    const [carrito, setCarrito] = useState(4);
 
     const sumarCarrito = () => {
-        setCarrito(carrito + 1);
+        setCarrito(carrito + 0);
     };
     return (
         <>
             <IconButton sx={{ margin: "20px" }} aria-label="cart">
-                {/* <StyledBadge badgeContent={carrito} color="secondary"> */}
-                <StyledBadge badgeContent={4} color="primary">
+                <StyledBadge badgeContent={carrito} color="secondary">
                     <ShoppingCartIcon onClick={sumarCarrito} />
                 </StyledBadge>
             </IconButton>

@@ -3,8 +3,8 @@ export const Card = ({ title, price, stock }) => {
         <div
             style={{
                 border: "2px solid black",
-                width: "200px",
-                height: "200px",
+                width: "225px",
+                height: "225px",
                 margin: "10px",
                 padding: "10px",
             }}
