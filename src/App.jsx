@@ -1,13 +1,11 @@
-// import { Footer } from "./components/layout/footer/Footer";
 import { Navbar } from "./components/layout/navbar/Navbar.jsx";
-import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer";
+import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer.jsx";
 
 function App() {
     return (
         <>
             <Navbar />
-            <ItemListContainer />
-            {/* <Footer /> */}
+            <ItemListContainer title="Saludo" />
         </>
     );
 }

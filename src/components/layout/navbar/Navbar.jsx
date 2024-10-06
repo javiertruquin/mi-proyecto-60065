@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { CartWidget } from "../../common/cartWidget/CartWidget";
-import { containerNavbar } from "./navbar.js";
+import { containerNavbar } from "./Navbar.js";
 import ListType from "../../common/listType/ListType.jsx";
 
 export const Navbar = () => {
@@ -20,7 +20,7 @@ export const Navbar = () => {
                             lineHeight:1.10,
                         }}
                     >
-                        <b>La guarida de los Meeples</b>
+                        <b>La Guarida de los Meeples</b>
                     </Typography>
                 </Box>
 
