@@ -1,14 +1,14 @@
 import { Box } from "@mui/material";
 import { CartWidget } from "../../common/cartWidget/CartWidget";
-// import { containerNavbar } from "./navbar.js";
-// import ListType from "../../common/listType/ListType.jsx";
+import { containerNavbar } from "./navbar.js";
+import ListType from "../../common/listType/ListType.jsx";
 
 export const Navbar = () => {
     
     return (
         <>
             <Box
-                
+                sx={containerNavbar}
             >
                 <Box sx={{width:"200px"}}>
                     <img
@@ -16,14 +16,10 @@ export const Navbar = () => {
                         alt="logo"
                         style={{width:"150px"}}
                     />
-                    
+                    <h1 >Mi Turno</h1>
                 </Box>
-                {/* <ul>
-                    <li>Todos</li>
-                    <li>Party</li>
-                    <li>Euros</li>
-                </ul> */}
-                {/* <ListType /> */}
+
+                <ListType />
                 <CartWidget />
             </Box>
         </>
