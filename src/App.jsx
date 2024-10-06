@@ -1,19 +1,13 @@
-// import Counter from "./components/common/counter/Counter";
-// import { Navbar } from "./components/layout/navbar/Navbar";
-// import { Footer } from "./components/layout/footer/Footer";
-// import { IttemListContainer } from "./components/pages/itemListContainer/IttemListContainer";
-// import PruebaGrid from "./components/PruebaGrid.jsx";
-import PruebaComponentes from "./components/PruebaComponentes";
+import { Navbar } from "./components/layout/navbar/Navbar";
+import { Footer } from "./components/layout/footer/Footer";
+import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer";
 
 function App() {
     return (
         <>
-            {/* <Navbar />*/}
-            {/* <IttemListContainer /> */}
-            {/* <Footer /> */}
-            {/* <Counter /> */}
-            {/* <PruebaGrid /> */}
-            <PruebaComponentes />
+            <Navbar />
+            <ItemListContainer />
+            <Footer />
         </>
     );
 }
