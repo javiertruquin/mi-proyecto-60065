@@ -1,5 +1,4 @@
 import { Card } from "../../common/Card/Card";
-// const productos = [{},{},{}]
 
 export const ItemListContainer = () => {
     return (

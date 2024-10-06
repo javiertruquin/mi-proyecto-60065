@@ -5,6 +5,8 @@ export const Card = ({ title, price, stock }) => {
                 border: "2px solid black",
                 width: "200px",
                 height: "200px",
+                margin: "10px",
+                padding: "10px",
             }}
         >
             <h2>Titulo: {title}</h2>
