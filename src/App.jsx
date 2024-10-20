@@ -1,19 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navbar } from "./components/layout/navbar/Navbar.jsx";
 import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer.jsx";
 
 function App() {
-    const [darkMode, setDarkMode] = useState(false)
-    
-    const cambiarModo = () =>{
-        setDarkMode(!darkMode)
-    }
-    
+    const [darkMode, setDarkMode] = useState(false);
+
+    const cambiarModo = () => {
+        setDarkMode(!darkMode);
+    };
+    const [entrarEnElDom, setEntrarEnElDom] = useState(true);
+    const montarOdesmontar = () => {
+        setEntrarEnElDom(!entrarEnElDom);
+    };
+
+    useEffect(() => {
+        console.log("componente comienza:" + entrarEnElDom);
+        console.log("DarkMode comienza:" + darkMode);
+    }, []);
     return (
         <>
             <button onClick={cambiarModo}>Dark Mode</button>
+            <button onClick={montarOdesmontar}>Montar/Desmontar</button>
             <Navbar />
-            <ItemListContainer title="Saludo" darkMode={darkMode}/>
+            {entrarEnElDom ? (
+                <ItemListContainer title="Saludo" darkMode={darkMode} />
+            ) : null}
         </>
     );
 }

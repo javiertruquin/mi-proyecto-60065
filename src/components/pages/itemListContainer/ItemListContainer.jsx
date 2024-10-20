@@ -3,7 +3,7 @@ import { Card } from "../../common/Card/Card";
 
 export const ItemListContainer = ({title , darkMode}) => {
     return (
-        <Box align="center" sx={{backgroundColor: darkMode ? "black" : "white"}}>
+        <Box align="center" sx={{backgroundColor: darkMode ? "blueviolet" : "white"}}>
             <Typography variant="h1">{title}</Typography>
             <Box sx={{display:"flex", justifyContent:"center"}}>
                 <Card title="Catan" price={500} stock={5} />
