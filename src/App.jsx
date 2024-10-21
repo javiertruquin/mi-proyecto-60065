@@ -1,30 +1,33 @@
-import { useState, useEffect } from "react";
-import { Navbar } from "./components/layout/navbar/Navbar.jsx";
-import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer.jsx";
+// import { useState, useEffect } from "react";
+// import { Navbar } from "./components/layout/navbar/Navbar.jsx";
+import FetchingData from "./components/pages/fetchingData/FetchingData.jsx";
+// import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer.jsx";
 
 function App() {
-    const [darkMode, setDarkMode] = useState(false);
+    // const [darkMode, setDarkMode] = useState(false);
 
-    const cambiarModo = () => {
-        setDarkMode(!darkMode);
-    };
-    const [entrarEnElDom, setEntrarEnElDom] = useState(true);
-    const montarOdesmontar = () => {
-        setEntrarEnElDom(!entrarEnElDom);
-    };
+    // const cambiarModo = () => {
+    //     setDarkMode(!darkMode);
+    // };
+    // const [entrarEnElDom, setEntrarEnElDom] = useState(true);
+    // const montarOdesmontar = () => {
+    //     setEntrarEnElDom(!entrarEnElDom);
+    // };
 
-    useEffect(() => {
-        console.log("componente comienza:" + entrarEnElDom);
-        console.log("DarkMode comienza:" + darkMode);
-    }, []);
+    // useEffect(() => {
+    //     console.log("componente comienza:" + entrarEnElDom);
+    //     console.log("DarkMode comienza:" + darkMode);
+    // }, []);
     return (
         <>
-            <button onClick={cambiarModo}>Dark Mode</button>
-            <button onClick={montarOdesmontar}>Montar/Desmontar</button>
-            <Navbar />
-            {entrarEnElDom ? (
+            {/* <button onClick={cambiarModo}>Dark Mode</button>
+            <button onClick={montarOdesmontar}>Montar/Desmontar</button> */}
+            {/* <Navbar /> */}
+            {/* {entrarEnElDom ? (
                 <ItemListContainer title="Saludo" darkMode={darkMode} />
-            ) : null}
+            ) : null} */}
+            {/* <ItemListContainer title="Saludo" /> */}
+            <FetchingData />
         </>
     );
 }
