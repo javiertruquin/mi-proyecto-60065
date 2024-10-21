@@ -1,6 +1,7 @@
 // import { useState, useEffect } from "react";
-// import { Navbar } from "./components/layout/navbar/Navbar.jsx";
-import FetchingData from "./components/pages/fetchingData/FetchingData.jsx";
+import { Navbar } from "./components/layout/navbar/Navbar.jsx";
+import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer.jsx";
+// import FetchingData from "./components/pages/fetchingData/FetchingData.jsx";
 // import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer.jsx";
 
 function App() {
@@ -22,12 +23,13 @@ function App() {
         <>
             {/* <button onClick={cambiarModo}>Dark Mode</button>
             <button onClick={montarOdesmontar}>Montar/Desmontar</button> */}
-            {/* <Navbar /> */}
+            <Navbar />
             {/* {entrarEnElDom ? (
                 <ItemListContainer title="Saludo" darkMode={darkMode} />
             ) : null} */}
             {/* <ItemListContainer title="Saludo" /> */}
-            <FetchingData />
+            <ItemDetailContainer />
+            {/* <FetchingData /> */}
         </>
     );
 }

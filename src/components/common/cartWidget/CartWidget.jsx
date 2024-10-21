@@ -17,7 +17,7 @@ export const CartWidget = () => {
     const [carrito, setCarrito] = useState(4);
 
     const sumarCarrito = () => {
-        setCarrito(carrito + 0);
+        setCarrito(carrito + 1);
     };
     return (
         <>

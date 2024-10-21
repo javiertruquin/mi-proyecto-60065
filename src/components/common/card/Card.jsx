@@ -1,4 +1,4 @@
-export const Card = ({ title, price, stock }) => {
+export const Card = ({ title, price, stock ,image }) => {
     return (
         <div
             style={{
@@ -12,6 +12,8 @@ export const Card = ({ title, price, stock }) => {
             <h2>Titulo: {title}</h2>
             <h3>Precio: {price}</h3>
             <h3>Stock: {stock}</h3>
+            <img src={image} alt='' style={{width:"100px"}}/>
+            <button>Ver detalle</button>
         </div>
     );
 };
