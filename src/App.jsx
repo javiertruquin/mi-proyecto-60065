@@ -1,8 +1,9 @@
 // import { useState, useEffect } from "react";
 // import Comments from "./Comments.jsx";
+import FetchingData from "./components/FetchingData.jsx";
 import { Navbar } from "./components/layout/navbar/Navbar.jsx";
 // import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer.jsx";
-import Posts from "./Posts.jsx";
+// import Posts from "./Posts.jsx";
 // import Users from "./Users.jsx";
 // import FetchingData from "./components/pages/fetchingData/FetchingData.jsx";
 // import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer.jsx";
@@ -33,9 +34,10 @@ function App() {
             {/* <ItemListContainer title="Saludo" /> */}
             {/* <ItemDetailContainer /> */}
             {/* <Users /> */}
-            <Posts />
+            {/* <Posts /> */}
             {/* <Comments /> */}
             {/* <FetchingData /> */}
+            <FetchingData />
         </>
     );
 }
