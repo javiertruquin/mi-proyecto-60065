@@ -3,7 +3,7 @@ import { products } from "../../../productos";
 import { useEffect, useState } from "react";
 
 const ItemDetailContainer = () => {
-    let id = "2";
+    let id = "1";
     const [item, setItem] = useState({});
     useEffect(() => {
         let productSelected = products.find((producto) => producto.id === id);

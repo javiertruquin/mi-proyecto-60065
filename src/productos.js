@@ -8,7 +8,7 @@ export const products = [
             "https://http2.mlstatic.com/D_Q_NP_2X_926661-MLA74667481514_022024-E.webp",
         description: "las mejores zapatillas",
         brand: "nike",
-        category: "urbanas",
+        category: "partys",
     },
     {
         id: "2",
@@ -19,7 +19,7 @@ export const products = [
             "https://http2.mlstatic.com/D_Q_NP_2X_926661-MLA74667481514_022024-E.webp",
         description: "las mejores zapatillas",
         brand: "adidas",
-        category: "deportivas",
+        category: "partys",
     },
     {
         id: "3",
@@ -30,5 +30,17 @@ export const products = [
             "https://http2.mlstatic.com/D_Q_NP_2X_926661-MLA74667481514_022024-E.webp",
         description: "las mejores zapatillas",
         brand: "topper",
-        category: "urbanas",
-    }]
+        category: "euros",
+    },
+    {
+        id: "4",
+        title: "topper 2",
+        price: 444,
+        stock: 3,
+        imageUrl:
+            "https://http2.mlstatic.com/D_Q_NP_2X_926661-MLA74667481514_022024-E.webp",
+        description: "las mejores zapatillas",
+        brand: "topper",
+        category: "euros",
+    },
+];
