@@ -4,28 +4,27 @@ import { useEffect, useState } from "react";
 import { products } from "../../../productos";
 import ItemList from "./ItemList";
 import { Box } from "@mui/material";
+import { useParams } from "react-router-dom";
 
 export const ItemListContainer = () => {
+    const { name } = useParams();
+
     const [items, setItems] = useState([]);
     useEffect(() => {
+        const unaFraccion = products.filter(
+            (producto) => producto.category === name
+        );
+
         const getProducts = new Promise((resolve) => {
-            resolve(products);
+            resolve(name ? unaFraccion : products);
         });
         getProducts.then((res) => {
             setItems(res);
         });
-    }, []);
+    }, [name]);
 
     return (
-        <Box
-        // align="center"
-        // sx={{ backgroundColor: darkMode ? "blueviolet" : "white" }}
-        >
-            {/* <Typography variant="h1">{title}</Typography>
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-                <Card title="Catan" price={500} stock={5} />
-                <Card title="Tripulación" price={400} stock={4} />
-            </Box> */}
+        <Box>
             <ItemList items={items} />
         </Box>
     );

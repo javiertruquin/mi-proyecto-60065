@@ -1,4 +1,6 @@
-export const Card = ({ title, price, stock ,image }) => {
+import { Link } from "react-router-dom";
+
+export const Card = ({ id, title, price, stock, image }) => {
     return (
         <div
             style={{
@@ -12,8 +14,10 @@ export const Card = ({ title, price, stock ,image }) => {
             <h2>Titulo: {title}</h2>
             <h3>Precio: {price}</h3>
             <h3>Stock: {stock}</h3>
-            <img src={image} alt='' style={{width:"100px"}}/>
-            <button>Ver detalle</button>
+            <img src={image} alt="" style={{ width: "100px" }} />
+            <Link to={`/itemDetail/${id}`}>
+                <button>Ver detalle</button>
+            </Link>
         </div>
     );
 };

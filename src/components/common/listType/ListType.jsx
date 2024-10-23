@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
+import { Link } from "react-router-dom";
 
 export default function ListType() {
     return (
@@ -10,19 +11,25 @@ export default function ListType() {
                 sx={{
                     width: "100%",
                     maxWidth: 360,
-                    bgcolor:"rebeccapurple",
+                    bgcolor: "rebeccapurple",
                 }}
             >
                 <List component="nav" aria-label="secondary mailbox folder">
-                    <ListItemButton>
-                        <ListItemText primary="Todos" />
-                    </ListItemButton>
-                    <ListItemButton>
-                        <ListItemText primary="Partys" />
-                    </ListItemButton>
-                    <ListItemButton>
-                        <ListItemText primary="Euros" />
-                    </ListItemButton>
+                    <Link to="/">
+                        <ListItemButton>
+                            <ListItemText primary="Todos" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to="/category/partys">
+                        <ListItemButton>
+                            <ListItemText primary="Partys" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to="/category/euros">
+                        <ListItemButton>
+                            <ListItemText primary="Euros" />
+                        </ListItemButton>
+                    </Link>
                 </List>
             </Box>
         </>

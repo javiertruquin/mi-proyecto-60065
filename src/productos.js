@@ -1,24 +1,24 @@
 export const products = [
     {
         id: "1",
-        title: "nike f43",
-        price: 200,
+        title: "Catan",
+        price: 100,
         stock: 5,
         imageUrl:
-            "https://http2.mlstatic.com/D_Q_NP_2X_926661-MLA74667481514_022024-E.webp",
-        description: "las mejores zapatillas",
-        brand: "nike",
-        category: "partys",
+            "https://devirinvestments.s3.eu-west-1.amazonaws.com/img/catalog/product/8436017220100-1200-face3d-copy.jpg",
+        description: "Juegardo",
+        brand: "Devir",
+        category: "euros",
     },
     {
         id: "2",
-        title: "adidas aw35",
-        price: 250,
-        stock: 5,
+        title: "HDP",
+        price: 50,
+        stock: 10,
         imageUrl:
-            "https://http2.mlstatic.com/D_Q_NP_2X_926661-MLA74667481514_022024-E.webp",
-        description: "las mejores zapatillas",
-        brand: "adidas",
+            "https://acdn.mitiendanube.com/stores/102/709/products/hdp_mu_iz_1280x1280px1-0721e6f2f4b82d873d16426231760994-640-0.jpg",
+        description: "Juego para jugar con amigos",
+        brand: "no es Devir",
         category: "partys",
     },
     {
@@ -27,10 +27,10 @@ export const products = [
         price: 450,
         stock: 5,
         imageUrl:
-            "https://http2.mlstatic.com/D_Q_NP_2X_926661-MLA74667481514_022024-E.webp",
+            "https://acdn.mitiendanube.com/stores/102/709/products/hdp_mu_iz_1280x1280px1-0721e6f2f4b82d873d16426231760994-640-0.jpg",
         description: "las mejores zapatillas",
-        brand: "topper",
-        category: "euros",
+        brand: "no es Devir",
+        category: "partys",
     },
     {
         id: "4",
@@ -38,9 +38,9 @@ export const products = [
         price: 444,
         stock: 3,
         imageUrl:
-            "https://http2.mlstatic.com/D_Q_NP_2X_926661-MLA74667481514_022024-E.webp",
+            "https://acdn.mitiendanube.com/stores/102/709/products/hdp_mu_iz_1280x1280px1-0721e6f2f4b82d873d16426231760994-640-0.jpg",
         description: "las mejores zapatillas",
-        brand: "topper",
+        brand: "no es Devir",
         category: "euros",
     },
 ];

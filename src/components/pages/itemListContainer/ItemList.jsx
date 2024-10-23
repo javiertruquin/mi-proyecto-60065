@@ -1,7 +1,6 @@
 import { Card } from "../../common/card/Card";
 
 function ItemList({ items }) {
-    console.log(items);
     return (
         <>
             <h2>Listado de Productos</h2>
@@ -20,6 +19,7 @@ function ItemList({ items }) {
                         price={price}
                         stock={stock}
                         image={imageUrl}
+                        id={id}
                     />
                 ))}
             </div>
