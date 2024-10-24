@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Card = ({ id, title, price, stock, image }) => {
+export const Card = ({ id, titulo, precio, stock, portada }) => {
     return (
         <div
             style={{
@@ -11,10 +11,10 @@ export const Card = ({ id, title, price, stock, image }) => {
                 padding: "10px",
             }}
         >
-            <h2>Titulo: {title}</h2>
-            <h3>Precio: {price}</h3>
+            <h2>Titulo: {titulo}</h2>
+            <h3>Precio: {precio}</h3>
             <h3>Stock: {stock}</h3>
-            <img src={image} alt="" style={{ width: "100px" }} />
+            <img src={portada} alt="" style={{ width: "100px" }} />
             <Link to={`/itemDetail/${id}`}>
                 <button>Ver detalle</button>
             </Link>

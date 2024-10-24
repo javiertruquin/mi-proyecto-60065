@@ -12,13 +12,13 @@ function ItemList({ items }) {
                     width: "100%",
                 }}
             >
-                {items.map(({ id, title, price, stock, imageUrl }) => (
+                {items.map(({ id, titulo, precio, stock, portada }) => (
                     <Card
                         key={id}
-                        title={title}
-                        price={price}
+                        titulo={titulo}
+                        precio={precio}
                         stock={stock}
-                        image={imageUrl}
+                        portada={portada}
                         id={id}
                     />
                 ))}

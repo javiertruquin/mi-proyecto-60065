@@ -12,7 +12,7 @@ export const ItemListContainer = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
         const unaFraccion = products.filter(
-            (producto) => producto.category === name
+            (producto) => producto.categoria === name
         );
 
         const getProducts = new Promise((resolve) => {

@@ -17,7 +17,7 @@ export const Navbar = () => {
                 >
                     <Link to="/">
                         <img
-                            src="https://res.cloudinary.com/dwwta0kis/image/upload/v1728181914/CurosReact/unnamed__3_-transformed_j7aaho.png"
+                            src="https://res.cloudinary.com/dwwta0kis/image/upload/v1728181914/CurosReact/Logos/unnamed__3_-transformed_j7aaho.png"
                             alt="logo"
                             style={{ width: "200px" }}
                         />
