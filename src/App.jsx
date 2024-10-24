@@ -1,6 +1,7 @@
 // import { useState, useEffect } from "react";
 // import Comments from "./Comments.jsx";
-import FetchingData from "./components/FetchingData.jsx";
+// import FetchingData from "./components/FetchingData.jsx";
+import FetchingAsync from "./components/FetchingAsync.jsx";
 import { Navbar } from "./components/layout/navbar/Navbar.jsx";
 // import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer.jsx";
 // import Posts from "./Posts.jsx";
@@ -37,7 +38,8 @@ function App() {
             {/* <Posts /> */}
             {/* <Comments /> */}
             {/* <FetchingData /> */}
-            <FetchingData />
+            {/* <FetchingData /> */}
+            <FetchingAsync />
         </>
     );
 }
