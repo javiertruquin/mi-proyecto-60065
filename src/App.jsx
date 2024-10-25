@@ -5,6 +5,7 @@ import { ItemListContainer } from "./components/pages/itemListContainer/ItemList
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./components/pages/cart/Cart.jsx";
 import Footer from "./components/layout/footer/Footer.jsx";
+import Checkout from "./components/pages/checkout/Checkout.jsx";
 // import ItemDetail from "./components/pages/itemDetail/ItemDetail.jsx";
 // import { useState, useEffect } from "react";
 // import Comments from "./Comments.jsx";
@@ -33,6 +34,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<ItemListContainer />} />
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/checkout" element={<Checkout />} />
                 <Route path="/login" element={<h1>Login</h1>} />
                 <Route
                     path="/itemDetail/:id"
