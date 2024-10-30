@@ -14,7 +14,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 export const Counter = ({ stock, agregarAlCarrito }) => {
-    const [contador, setContador] = useState(0);
+    const [contador, setContador] = useState(1);
 
     const sumarContador = () => {
         stock > contador ? setContador(contador + 1) : alert("stock maximo");
