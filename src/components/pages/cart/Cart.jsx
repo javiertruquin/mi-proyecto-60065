@@ -28,7 +28,10 @@ const Cart = () => {
                 );
             })}
             <h1>finalizar compra</h1>
-            <button onClick={resetCart}>Limpiar Carrito</button>
+            {cart.length > 0 && (
+                <button onClick={resetCart}>Limpiar Carrito</button>
+            )}
+
             <h2>Total a pagar es : {total} </h2>
             <Link to="/checkout">finalizar compra</Link>
         </div>

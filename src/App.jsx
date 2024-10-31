@@ -7,6 +7,7 @@ import Cart from "./components/pages/cart/Cart.jsx";
 import Footer from "./components/layout/footer/Footer.jsx";
 import Checkout from "./components/pages/checkout/Checkout.jsx";
 import { CartContextProvider } from "./context/CartContext.jsx";
+import { Toaster } from "sonner";
 // import ItemDetail from "./components/pages/itemDetail/ItemDetail.jsx";
 // import { useState, useEffect } from "react";
 // import Comments from "./Comments.jsx";
@@ -31,6 +32,7 @@ function App() {
 
     return (
         <BrowserRouter>
+            <Toaster duration={2000} richColors position="top-center" />
             <CartContextProvider>
                 <Navbar />
                 <Routes>
