@@ -16,12 +16,13 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 export const CartWidget = () => {
-    const { cart } = useContext(CartContext);
+    const { getTotalQuantityCart } = useContext(CartContext);
+    let total = getTotalQuantityCart();
 
     return (
         <Link to="/cart">
             <IconButton sx={{ margin: "20px" }} aria-label="cart">
-                <StyledBadge badgeContent={cart.length} color="secondary">
+                <StyledBadge badgeContent={total} color="secondary">
                     <ShoppingCartIcon />
                 </StyledBadge>
             </IconButton>

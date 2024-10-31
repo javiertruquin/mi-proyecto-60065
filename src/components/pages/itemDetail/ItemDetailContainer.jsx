@@ -6,7 +6,10 @@ import { CartContext } from "../../../context/CartContext";
 
 const ItemDetailContainer = () => {
     const { id } = useParams(); //siempre devuelve un objeto {} puede estar vacio o puede tener propiedades
-    const { addToCart } = useContext(CartContext);
+    const { addToCart, getTotalQuantity } = useContext(CartContext);
+
+    let totalInCart = getTotalQuantity(id);
+
     const [item, setItem] = useState([]);
     useEffect(() => {
         let productSelected = products.find((producto) => producto.id === id);
@@ -17,7 +20,13 @@ const ItemDetailContainer = () => {
         let objeto = { ...item, quantity: cantidad };
         addToCart(objeto);
     };
-    return <ItemDetail item={item} agregarAlCarrito={agregarAlCarrito} />;
+    return (
+        <ItemDetail
+            item={item}
+            agregarAlCarrito={agregarAlCarrito}
+            totalInCart={totalInCart}
+        />
+    );
 };
 
 export default ItemDetailContainer;

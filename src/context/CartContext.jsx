@@ -8,10 +8,27 @@ export const CartContext = createContext();
 
 export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
-    //agregar al carritto
     console.log(cart);
+
+    //agregar al carritto
     const addToCart = (product) => {
-        setCart([...cart, product]);
+        let isInCart = cart.some((el) => el.id === product.id);
+        if (isInCart) {
+            // generar un nuevo array, igual q el anterior pero con un objeto modificado
+            let nuevoArray = cart.map((elemento) => {
+                if (elemento.id === product.id) {
+                    return {
+                        ...elemento,
+                        quantity: elemento.quantity + product.quantity,
+                    };
+                } else {
+                    return elemento;
+                }
+            });
+            setCart(nuevoArray);
+        } else {
+            setCart([...cart, product]);
+        }
     };
 
     //limpiar el carrito
@@ -25,7 +42,32 @@ export const CartContextProvider = ({ children }) => {
         setCart(arrayFiltrado);
     };
 
+    const getTotalQuantity = (id) => {
+        const product = cart.find((elemento) => elemento.id === id);
+        return product ? product.quantity : 0;
+    };
+    const getTotalAmount = () => {
+        let total = cart.reduce((acc, elemento) => {
+            return acc + elemento.precio * elemento.quantity;
+        }, 0);
+        return total;
+    };
+    const getTotalQuantityCart = () => {
+        let total = cart.reduce((acc, elemento) => {
+            return acc + elemento.quantity;
+        }, 0);
+        return total;
+    };
+
     //total a pagar del carrito
-    let data = { cart, addToCart, removeById, resetCart };
+    let data = {
+        cart,
+        addToCart,
+        removeById,
+        resetCart,
+        getTotalQuantity,
+        getTotalAmount,
+        getTotalQuantityCart,
+    };
     return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
 };
