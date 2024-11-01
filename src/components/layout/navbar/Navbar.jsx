@@ -4,7 +4,7 @@ import { containerNavbar } from "./Navbar.js";
 import ListType from "../../common/listType/ListType.jsx";
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+const Navbar = () => {
     return (
         <>
             <Box sx={containerNavbar}>
@@ -39,3 +39,5 @@ export const Navbar = () => {
         </>
     );
 };
+
+export default Navbar;
