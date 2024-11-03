@@ -13,14 +13,16 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
     },
 }));
 
-export const Counter = ({ stock, agregarAlCarrito }) => {
-    const [contador, setContador] = useState(0);
+export const Counter = ({ stock, agregarAlCarrito, totalInCart }) => {
+    const [contador, setContador] = useState(1);
 
     const sumarContador = () => {
-        stock > contador ? setContador(contador + 1) : alert("stock maximo");
+        stock - totalInCart > contador
+            ? setContador(contador + 1)
+            : alert("stock maximo");
     };
     const restarContador = () => {
-        contador > 0 ? setContador(contador - 1) : alert("stock minimo");
+        contador > 1 ? setContador(contador - 1) : alert("stock minimo");
     };
     return (
         <div>
