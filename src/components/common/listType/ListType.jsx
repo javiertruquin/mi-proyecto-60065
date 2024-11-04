@@ -1,5 +1,4 @@
 import Box from "@mui/material/Box";
-import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import { Link } from "react-router-dom";
@@ -9,28 +8,49 @@ export default function ListType() {
         <>
             <Box
                 sx={{
-                    width: "100%",
-                    maxWidth: 360,
-                    bgcolor: "rebeccapurple",
+                    display: "flex",
+                    justifyContent: "center",
                 }}
             >
-                <List component="nav" aria-label="secondary mailbox folder">
-                    <Link to="/">
-                        <ListItemButton>
-                            <ListItemText primary="Todos" />
-                        </ListItemButton>
-                    </Link>
-                    <Link to="/category/partys">
-                        <ListItemButton>
-                            <ListItemText primary="Partys" />
-                        </ListItemButton>
-                    </Link>
-                    <Link to="/category/euros">
-                        <ListItemButton>
-                            <ListItemText primary="Euros" />
-                        </ListItemButton>
-                    </Link>
-                </List>
+                <Link
+                    to="/"
+                    style={{
+                        textDecoration: "none",
+                        color: "white",
+                        backgroundColor: "rebeccapurple",
+                        margin:"5px"
+                    }}
+                >
+                    <ListItemButton>
+                        <ListItemText primary="Todos" />
+                    </ListItemButton>
+                </Link>
+                <Link
+                    to="/category/Party"
+                    style={{
+                        textDecoration: "none",
+                        color: "white",
+                        backgroundColor: "rebeccapurple",
+                        margin:"5px"
+                    }}
+                >
+                    <ListItemButton>
+                        <ListItemText primary="Partys" />
+                    </ListItemButton>
+                </Link>
+                <Link
+                    to="/category/Euro"
+                    style={{
+                        textDecoration: "none",
+                        color: "white",
+                        backgroundColor: "rebeccapurple",
+                        margin:"5px"
+                    }}
+                >
+                    <ListItemButton>
+                        <ListItemText primary="Euros" />
+                    </ListItemButton>
+                </Link>
             </Box>
         </>
     );

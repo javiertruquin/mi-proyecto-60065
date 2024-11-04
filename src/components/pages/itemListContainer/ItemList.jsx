@@ -1,28 +1,28 @@
-import { Card } from "../../common/card/Card";
+import { Box, Typography } from "@mui/material";
+import { CardModel } from "../../common/cardModel/CardModel.jsx";
+import { listProducts } from "./ItemList.js";
 
 function ItemList({ items }) {
     return (
         <>
-            <h2>Listado de Productos</h2>
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "space-around",
-                    flexWrap: "wrap",
-                    width: "100%",
-                }}
-            >
-                {items.map(({ id, titulo, precio, stock, portada }) => (
-                    <Card
-                        key={id}
-                        titulo={titulo}
-                        precio={precio}
-                        stock={stock}
-                        portada={portada}
-                        id={id}
-                    />
-                ))}
-            </div>
+            <Typography variant="h2" textAlign={"center"}>
+                Productos Destacados
+            </Typography>
+            <Box sx={listProducts}>
+                {items.map(
+                    ({ id, titulo, precio, stock, portada, categoria }) => (
+                        <CardModel
+                            key={id}
+                            titulo={titulo}
+                            precio={precio}
+                            stock={stock}
+                            portada={portada}
+                            categoria={categoria}
+                            id={id}
+                        />
+                    )
+                )}
+            </Box>
         </>
     );
 }

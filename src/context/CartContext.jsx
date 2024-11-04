@@ -42,16 +42,19 @@ export const CartContextProvider = ({ children }) => {
         setCart(arrayFiltrado);
     };
 
-    const getTotalQuantity = (id) => {
-        const product = cart.find((elemento) => elemento.id === id);
-        return product ? product.quantity : 0;
-    };
+    //total a pagar del carrito
     const getTotalAmount = () => {
         let total = cart.reduce((acc, elemento) => {
             return acc + elemento.precio * elemento.quantity;
         }, 0);
         return total;
     };
+
+    const getTotalQuantity = (id) => {
+        const product = cart.find((elemento) => elemento.id === id);
+        return product ? product.quantity : 0;
+    };
+
     const getTotalQuantityCart = () => {
         let total = cart.reduce((acc, elemento) => {
             return acc + elemento.quantity;
@@ -59,7 +62,6 @@ export const CartContextProvider = ({ children }) => {
         return total;
     };
 
-    //total a pagar del carrito
     let data = {
         cart,
         addToCart,

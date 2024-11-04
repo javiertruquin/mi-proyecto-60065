@@ -15,7 +15,7 @@ export const products = [
         jugadoresMin: 3,
         jugadoresMax: 4,
         duracion: "75 minutos",
-        categoria: "euros",
+        categoria: "Euro",
         description: `Catan es un juego de mesa para toda la familia que se ha convertido en un fenómeno mundial. Desde su aparición en Alemania ha vendido más de 25.000.000 (¡Y sumando!) de unidades en todo el mundo y ha sido publicado a más de 30 idiomas.
 
 Catan se trata de un juego que une la estrategia, la astucia y la capacidad para negociar y en el que los jugadores tratan de colonizar una isla, Catán, rica en recursos naturales. El objetivo del juego es construir pueblos, ciudades y caminos sobre un tablero que es distinto cada vez, mientras se van acumulando varios tipos de cartas. Todos estos elementos proporcionan distintas puntuaciones, ganando la partida el primer jugador que llega a los diez puntos…
@@ -38,7 +38,7 @@ Por si esto no fuera bastante, ha sido galardonado en Alemania y Estados Unidos 
         jugadoresMin: 4,
         jugadoresMax: 12,
         duracion: "30 - 90 minutos",
-        categoria: "partys",
+        categoria: "Party",
         description: `HDP (Hasta Donde Puedas)
 
 Hasta Donde Puedas (H.D.P.) es un juego de cartas extremadamente divertido, ideal para fiestas y juntadas de amigos.
@@ -68,7 +68,7 @@ Un juego de humor absurdo, negro, sutil, disparatado y por qué no, bien HDP.`,
         jugadoresMin: 1,
         jugadoresMax: 4,
         duracion: "80 minutos",
-        categoria: "euros",
+        categoria: "Euro",
         description: `La garza vuela sobre el cielo de Himeji mientras el Daimio, desde lo alto del castillo, contempla cómo se mueven sus sirvientes. Los jardineros cuidan del estanque, donde viven las carpas koi, los guerreros hacen guardia en las murallas y los cortesanos se amontonan en las puertas, suspirando por una audiencia que les acerque a los círculos más íntimos de la corte. Cuando anochece se encienden los faroles y los trabajadores vuelven con su clan.
 
 En The White Castle los jugadores controlarán uno de estos clanes con el objetivo de sumar más puntos de victoria que el resto. Para hacerlo, deberán acumular influencia en la corte, gestionar recursos con audacia y colocar a sus trabajadores en el lugar adecuado en el momento adecuado. El juego se puede disfrutar en solitario o en un grupo de hasta 4 jugadores.
@@ -97,7 +97,7 @@ The White Castle es un juego de tipo euro con mecánicas de gestión de recursos
         jugadoresMin: 2,
         jugadoresMax: 8,
         duracion: "20 minutos",
-        categoria: "partys",
+        categoria: "Party",
         description: `Hoy toca cenar a la carta: Disfruten de un festín de lujo a base de maki, sashimi y edamame sin fin. Esta versión incluye el juego básico y muchos más platos. Antes de empezar los jugadores deberán elegir su propio menú entre 20 opciones exquisitas. Después, igual que siempre, intentar ganar tantos puntos como les sea posible combinando las mejores cartas.
 
 Además, ahora podrás reunir hasta 8 comensales alrededor de la mesa y disfrutar de un tablero con el cual podrás ir contando tus puntos ronda a ronda.

@@ -2,7 +2,7 @@
 // import { Card } from "../../common/Card/Card";
 import { useEffect, useState } from "react";
 import { products } from "../../../productos";
-import ItemList from "./ItemList";
+import ItemList from "./ItemList.jsx";
 import { useParams } from "react-router-dom";
 import { Box, Skeleton } from "@mui/material";
 
@@ -26,8 +26,7 @@ export const ItemListContainer = () => {
     }, [name]);
 
     return (
-        <Box>
-            <h2>titulo</h2>
+        <Box style={{paddingTop:"20px"}}>
             {items.length === 0 && (
                 <>
                     <Skeleton variant="rectangular" width={200} height={100} />
@@ -37,7 +36,6 @@ export const ItemListContainer = () => {
             )}
 
             <ItemList items={items} />
-            <h2>aca algo mas</h2>
         </Box>
     );
 };

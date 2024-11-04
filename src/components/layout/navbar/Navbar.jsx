@@ -1,8 +1,10 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+// import { Typography } from "@mui/material";
 import { CartWidget } from "../../common/cartWidget/CartWidget";
 import { containerNavbar } from "./Navbar.js";
 import ListType from "../../common/listType/ListType.jsx";
 import { Link } from "react-router-dom";
+import logo from "../../../assets/Logo.webp";
 
 const Navbar = () => {
     return (
@@ -15,14 +17,10 @@ const Navbar = () => {
                         alignItems: "center",
                     }}
                 >
-                    <Link to="/">
-                        <img
-                            src="https://res.cloudinary.com/dwwta0kis/image/upload/v1728181914/CurosReact/Logos/unnamed__3_-transformed_j7aaho.png"
-                            alt="logo"
-                            style={{ width: "200px" }}
-                        />
+                    <Link to="/" style={{ marginBottom: "-4px" }}>
+                        <img src={logo} alt="logo" style={{ width: "200px" }} />
                     </Link>
-                    <Typography
+                    {/* <Typography
                         sx={{
                             color: "purple",
                             fontSize: "30px",
@@ -30,11 +28,19 @@ const Navbar = () => {
                         }}
                     >
                         <b>La Guarida de los Meeples</b>
-                    </Typography>
+                    </Typography> */}
                 </Box>
 
                 <ListType />
-                <CartWidget />
+                <Box
+                    sx={{
+                        width: "200px",
+                        display: "flex",
+                        justifyContent:"center"
+                    }}
+                >
+                    <CartWidget />
+                </Box>
             </Box>
         </>
     );

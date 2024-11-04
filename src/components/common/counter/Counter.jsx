@@ -26,17 +26,23 @@ export const Counter = ({ stock, agregarAlCarrito, totalInCart }) => {
     };
     return (
         <div>
-            <IconButton
-                onClick={sumarContador}
-                sx={{ margin: "20px" }}
-                aria-label="cart"
-            >
-                <StyledBadge badgeContent={contador} color="secondary">
-                    <ShoppingCartIcon />
-                </StyledBadge>
-            </IconButton>
-            <button onClick={() => agregarAlCarrito(contador)}>agregar</button>
-            <button onClick={restarContador}>restar</button>
+            <button onClick={sumarContador}>Sumar</button>
+            <div>
+                <h3>Cantidad : {contador}</h3>
+                <IconButton
+                    onClick={() => {
+                        agregarAlCarrito(contador);
+                        setContador(1);
+                    }}
+                    aria-label="cart"
+                >
+                    <StyledBadge badgeContent="+" color="secondary">
+                        <ShoppingCartIcon />
+                    </StyledBadge>
+                </IconButton>
+            </div>
+
+            <button onClick={restarContador}>Restar</button>
         </div>
     );
 };
