@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { Box, Skeleton } from "@mui/material";
 import { db } from "../../../firebaseConfig.js";
 import { collection, getDocs, query, where } from "firebase/firestore";
+// import { addDoc } from "firebase/firestore";
+// import { products } from "../../../productos.js";
 
 export const ItemListContainer = () => {
     const { name } = useParams();
@@ -24,6 +26,14 @@ export const ItemListContainer = () => {
         });
     }, [name]);
 
+    // const funcionParaAgregar = () => {
+    //     // products.addDoc();
+    //     const productsCollection = collection(db, "products");
+    //     // addDoc(productsCollection, {});
+    //     products.forEach((product) => {
+    //         addDoc(productsCollection, product);
+    //     });
+    // };
     return (
         <Box style={{ paddingTop: "20px" }}>
             {items.length === 0 && (
@@ -35,6 +45,7 @@ export const ItemListContainer = () => {
             )}
 
             <ItemList items={items} />
+            {/* <button onClick={funcionParaAgregar}>cargar los productos</button> */}
         </Box>
     );
 };
