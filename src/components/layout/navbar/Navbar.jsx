@@ -36,7 +36,7 @@ const Navbar = () => {
                     sx={{
                         width: "200px",
                         display: "flex",
-                        justifyContent:"center"
+                        justifyContent: "center",
                     }}
                 >
                     <CartWidget />
