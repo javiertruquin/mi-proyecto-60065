@@ -41,7 +41,7 @@ const Checkout = () => {
     };
 
     if (orderId) {
-        return <h2>Gracias por tu Compra Ticket es : {orderId} </h2>;
+        return <h2>Gracias por tu Compra, tu N° de Ticket es : {orderId} </h2>;
     }
 
     return (
