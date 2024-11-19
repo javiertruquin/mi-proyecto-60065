@@ -1,6 +1,7 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Skeleton, Typography } from "@mui/material";
 import { CardModel } from "../../common/cardModel/CardModel.jsx";
 import { listProducts } from "./ItemList.js";
+import { cardStyle } from "./cardModel.js";
 
 function ItemList({ items }) {
     return (
@@ -9,17 +10,47 @@ function ItemList({ items }) {
                 Productos Destacados
             </Typography>
             <Box sx={listProducts}>
+                {items.length === 0 && (
+                    <>
+                        <Skeleton
+                            sx={cardStyle}
+                            variant="rectangular"
+                            width={200}
+                            height={100}
+                        />
+                        <Skeleton
+                            sx={cardStyle}
+                            variant="rectangular"
+                            width={200}
+                            height={100}
+                        />
+                        <Skeleton
+                            sx={cardStyle}
+                            variant="rectangular"
+                            width={200}
+                            height={100}
+                        />
+                        <Skeleton
+                            sx={cardStyle}
+                            variant="rectangular"
+                            width={200}
+                            height={100}
+                        />
+                    </>
+                )}
                 {items.map(
                     ({ id, titulo, precio, stock, portada, categoria }) => (
-                        <CardModel
-                            key={id}
-                            titulo={titulo}
-                            precio={precio}
-                            stock={stock}
-                            portada={portada}
-                            categoria={categoria}
-                            id={id}
-                        />
+                        <>
+                            <CardModel
+                                key={id}
+                                titulo={titulo}
+                                precio={precio}
+                                stock={stock}
+                                portada={portada}
+                                categoria={categoria}
+                                id={id}
+                            />
+                        </>
                     )
                 )}
             </Box>

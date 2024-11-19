@@ -7,14 +7,14 @@ import {
     Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import { cardImage, cardImageBox, cardStyle } from "./CardModel";
+import { cardImage, cardImageBox, cardStyle } from "./cardModel.js";
 
 export const CardModel = ({ id, titulo, precio, portada, categoria }) => {
     return (
         <Box textAlign={"center"} sx={cardStyle}>
             <Link to={`/itemDetail/${id}`} style={{ textDecoration: "none" }}>
                 <CardActionArea>
-                    <Card >
+                    <Card>
                         <Box sx={cardImageBox}>
                             <CardMedia
                                 sx={cardImage}
