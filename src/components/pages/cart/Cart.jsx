@@ -5,7 +5,6 @@ import { useContext } from "react";
 const Cart = () => {
     const { cart, resetCart, removeById, getTotalAmount } =
         useContext(CartContext);
-    // console.log("Cart ~ cart:", cart);
     let total = getTotalAmount();
     return (
         <div>

@@ -8,7 +8,6 @@ export const CartContext = createContext();
 
 export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
-    console.log(cart);
 
     //agregar al carritto
     const addToCart = (product) => {

@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 // import { Typography } from "@mui/material";
 import { CartWidget } from "../../common/cartWidget/CartWidget";
-import { containerNavbar } from "./Navbar.js";
+import { containerNavbar } from "./navbar.js";
 import ListType from "../../common/listType/ListType.jsx";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/Logo.webp";
@@ -36,7 +36,7 @@ const Navbar = () => {
                     sx={{
                         width: "200px",
                         display: "flex",
-                        justifyContent:"center"
+                        justifyContent: "center",
                     }}
                 >
                     <CartWidget />
