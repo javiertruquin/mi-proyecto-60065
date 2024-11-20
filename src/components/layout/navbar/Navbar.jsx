@@ -5,6 +5,7 @@ import { containerNavbar } from "./navbar.js";
 import ListType from "../../common/listType/ListType.jsx";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/Logo.webp";
+import UserWidget from "../../common/userWidget/UserWidget.jsx";
 
 const Navbar = () => {
     return (
@@ -20,15 +21,6 @@ const Navbar = () => {
                     <Link to="/" style={{ marginBottom: "-4px" }}>
                         <img src={logo} alt="logo" style={{ width: "200px" }} />
                     </Link>
-                    {/* <Typography
-                        sx={{
-                            color: "purple",
-                            fontSize: "30px",
-                            lineHeight: 1.1,
-                        }}
-                    >
-                        <b>La Guarida de los Meeples</b>
-                    </Typography> */}
                 </Box>
 
                 <ListType />
@@ -39,6 +31,7 @@ const Navbar = () => {
                         justifyContent: "center",
                     }}
                 >
+                    <UserWidget />
                     <CartWidget />
                 </Box>
             </Box>
